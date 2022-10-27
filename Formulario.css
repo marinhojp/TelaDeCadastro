@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(16, 224, 86), rgb(59, 109, 76));
+}
+
+.box{
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+fieldset{
+    border: 3px  rgba(0,0,0,0.6);
+}
+
+legend{
+    border: 1px solid rgb(16, 224, 86) ;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(16, 224, 86) ;
+    border-radius: 5px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(16, 224, 86);
+}
+
+#data{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-color:rgb(16, 224, 86);
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-color:rgb(6, 158, 56) ;
+}
